@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Business Scraper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Business Profile Scraper</h2>
+    
+    <label for="fileInput">Upload CSV (company,country)</label>
+    <input type="file" id="fileInput" accept=".csv" />
+
+    <div class="row">
+      <button id="startScraping">Start Scraping</button>
+      <button id="downloadResults">Download Results</button>
+    </div>
+    <small>Status: <span id="status">Idle</span></small>
+  </div>
+
+  <script src="libs/papaparse.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
